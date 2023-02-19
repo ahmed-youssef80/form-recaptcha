@@ -5,7 +5,7 @@
     <script type="text/javascript">
       var verifyCallback = function(response) {
 //         if (response):{
-        const collection = document.getElementsByClassName("disabled");
+        const collection = document.getElementById("abyo");
         collection.classList.remove("disabled");
           console.log(response);
 
@@ -31,7 +31,7 @@
     <form action="?" method="POST">
       <div id="example3"></div>
       <br>
-      <input type="submit" value="Submit" class='disabled'>
+      <input id='abyo' type="submit" value="Submit" class='disabled'>
     </form>
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
         async defer>
