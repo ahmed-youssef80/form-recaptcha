@@ -1,37 +1,15 @@
 <html>
-  <head>
-    
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>reCAPTCHA demo: Explicit render for multiple widgets</title>
-    <script type="text/javascript">
-      var verifyCallback = function(response) {
-        const collection = document.getElementById("abyo");
-        collection.classList.remove("disabled");
-          console.log(response);
-      };
-      var onloadCallback = function() {
-        grecaptcha.render('example3', {
-          'sitekey' : '6Le0HJYkAAAAAEawRNe4xkUCUj9AvtnH_kGcvpIL',
-          'callback' : verifyCallback,
-          'theme' : 'dark'
-        });
-      };
-    </script>
-    <style >
-      .disabled{
-  pointer-events: none;
-}
-    </style>
-  </head>
-  <body>
+</head>
+<body>
+<div class="container">
+</br>
+    <a href="https://api.whatsapp.com/send?phone=00201119773391" class="mt-10 btn btn-success">whatsapp</a>
 
-    <!-- POSTs back to the page's URL upon submit with a g-recaptcha-response POST parameter. -->
-    <form action="?" method="POST">
-      <div id="example3"></div>
-      <br>
-      <input id='abyo' type="submit" value="Submit" class='disabled'>
-    </form>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async defer>
-    </script>
-  </body>
+</div>
+
+</body>
 </html>
